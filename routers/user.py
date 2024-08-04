@@ -51,10 +51,10 @@ async def send_start_message(bot: Bot, chat_id: int):
         chat_id=chat_id,
         reply_markup=keyboards.send_first_video(),
         caption="🇲🇽 Qué hago y cómo ayudo al pueblo de México?\n\n"
-                "Tengo una persona con información privilegiada que me proporciona los resultados de los acontecimientos deportivos contratados antes de que empiecen. Tengo tiempo para apostar en estos eventos deportivos y así me garantizo ganar dinero a diario.\n\n"
+                "Tengo una persona con información privilegiada que me proporciona los resultados de los acontecimientos deportivos contratados antes de que empiecen. Tengo tiempo para apostar en estos eventos deportivos y así me garantizo ganar dinero a diario. \n\n"
                 "Decidí que mi principal objetivo en la vida es ayudar a la gente, por lo que ofrecer una oportunidad de ganar con mi información. Cualquier persona con una inversión mínima puede ganar una muy buena cantidad de dinero varias veces al día.\n\n"
-                "🚀 Si quieres aprovechar la oportunidad y cambiar tu vida - escríbeme!\n\n"
-                f"✈️ @{ME_LINK.replace('https://t.me/', '')}",
+                "🚀 Si quieres aprovechar la oportunidad y cambiar tu vida - escríbeme!"
+                f"\n{ME_LINK.replace('https://t.me/', '')}",
         video=FSInputFile(os.path.join(MEDIA_PATH, "first_video.mp4"))
     )
 
